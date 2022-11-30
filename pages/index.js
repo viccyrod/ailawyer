@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import DeeplegalLogo from '../assets/deeplegal-logo.png';
-import DeeplegalLogoMain from '../assets/deeplegal-logo-main.png';
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -35,7 +34,6 @@ const callGenerateEndpoint = async () => {
   return (
     <div className="root">
       <Head>
-      <Image src={DeeplegalLogoMain} alt="deeplegal logo main" />
         <title> DeepLegal.io </title>
       </Head>
       <div className="container">
