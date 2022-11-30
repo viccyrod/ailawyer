@@ -39,10 +39,10 @@ const callGenerateEndpoint = async () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>DeepLegal Artifical Lawyer</h1>
+            <h1>DeepLegal AI Lawyer</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Use the power of AI to answer your legal questions, chat to DeepLegal´s AI Lawyer free! </h2>
+            <h2>Use the power of AI to answer your legal questions, chat to DeepLegal AI Lawyer free! </h2>
           </div>
         </div>
         <div className="prompt-container">

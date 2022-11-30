@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 const basePromptPrefix = 
 `
-This is a conversation with a lawyer and a client. The lawyer answers the questions in relation to Australian law.
+This is a conversation with a lawyer and a client. The lawyer answers questions in relation to Australian law.
 
 `
 const generateAction = async (req, res) => {
@@ -18,7 +18,7 @@ const generateAction = async (req, res) => {
     model: 'text-davinci-003',
     prompt: `${basePromptPrefix}${req.body.userInput}\n`,
     temperature: 0.75,
-    max_tokens: 500,
+    max_tokens: 1000,
   });
   
   const basePromptOutput = baseCompletion.data.choices.pop();
