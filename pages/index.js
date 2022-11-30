@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import DeeplegalLogo from '../assets/deeplegal-logo.png';
+import DeeplegalLogoMain from '../assets/deeplegal-logo-main.png';
 
 const Home = () => {
   const [userInput, setUserInput] = useState('');
@@ -34,6 +35,7 @@ const callGenerateEndpoint = async () => {
   return (
     <div className="root">
       <Head>
+      <Image src={DeeplegalLogoMain} alt="deeplegal logo main" />
         <title> DeepLegal.io </title>
       </Head>
       <div className="container">
@@ -43,6 +45,9 @@ const callGenerateEndpoint = async () => {
           </div>
           <div className="header-subtitle">
             <h2>Use the power of AI to answer your legal questions, chat to DeepLegal AI Lawyer free! </h2>
+          </div>
+          <div className="header-subtitle">
+            <h2>Are you in the USA? Head to <a>DeepLegal.io/US-law</a> </h2>
           </div>
         </div>
         <div className="prompt-container">
@@ -83,7 +88,7 @@ const callGenerateEndpoint = async () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <Image src={DeeplegalLogo} alt="deeplegal logo" />
             <p>Disclaimer: Prototype, Not legal advice</p>
           </div>
         </a>
