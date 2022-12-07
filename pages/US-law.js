@@ -45,7 +45,7 @@ const callGenerateEndpoint = async () => {
             <h2>Use the power of AI to answer your legal questions, chat to DeepLegal AI Lawyer free! </h2>
           </div>
           <div className="header-subtitle">
-            <h2>Are you in Australia? Head to <a href="http://deeplegal.io">DeepLegal.io</a> </h2>
+            <h2>Are you in Australia? Head to <a href="http://deeplegal.io">DeepLegal AU </a> </h2>
           </div>
         </div>
         <div className="prompt-container">
